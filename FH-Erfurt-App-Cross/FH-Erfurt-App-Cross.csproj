@@ -32,6 +32,8 @@
   <ItemGroup>
     <Compile Include="FH-Erfurt-App-Cross.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Page\PersonPage.cs" />
+    <Compile Include="Page\NewsPage.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.3.1.6296\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.3.1.6296\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -45,5 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Page\" />
+    <Folder Include="View\" />
+    <Folder Include="Model\" />
   </ItemGroup>
 </Project>
