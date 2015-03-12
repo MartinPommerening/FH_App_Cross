@@ -10,5 +10,6 @@ namespace FHErfurtAppCross
 
 		public Type TargetType { get; set; }
 	}
+		
 }
 

@@ -9,25 +9,25 @@ namespace FHErfurtAppCross
 		{
 			this.Add (new MenuItem () { 
 				Title = "Contracts", 
-				IconSource = "contracts.png", 
+				//IconSource = "contracts.png", 
 				TargetType = typeof(NewsPage)
 			});
 
 			this.Add (new MenuItem () { 
 				Title = "Leads", 
-				IconSource = "Lead.png", 
+				//IconSource = "Lead.png", 
 				TargetType = typeof(PersonPage)
 			});
 
 			this.Add (new MenuItem () { 
 				Title = "Accounts", 
-				IconSource = "Accounts.png", 
+				//IconSource = "Accounts.png", 
 				//TargetType = typeof(AccountsPage)
 			});
 
 			this.Add (new MenuItem () {
 				Title = "Opportunities",
-				IconSource = "Opportunity.png",
+				//IconSource = "Opportunity.png",
 				//TargetType = typeof(OpportunitiesPage)
 			});
 		}
