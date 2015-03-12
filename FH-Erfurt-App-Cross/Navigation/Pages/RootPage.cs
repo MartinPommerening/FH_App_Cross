@@ -13,7 +13,7 @@ namespace FHErfurtAppCross
 			menuPage.Menu.ItemSelected += (sender, e) => NavigateTo (e.SelectedItem as MenuItem);
 
 			Master = menuPage;
-			Detail = new NavigationPage (new new ());
+			Detail = new NavigationPage (new NewsPage());
 		}
 
 		void NavigateTo (MenuItem menu)
