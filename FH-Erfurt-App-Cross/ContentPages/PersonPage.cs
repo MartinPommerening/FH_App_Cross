@@ -4,9 +4,9 @@ using Xamarin.Forms;
 
 namespace FHErfurtAppCross
 {
-	public class Person : ContentPage
+	public class PersonPage : ContentPage
 	{
-		public Person ()
+		public PersonPage ()
 		{
 			Content = new StackLayout { 
 				Children = {

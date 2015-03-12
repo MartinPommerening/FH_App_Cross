@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using Xamarin.Forms;
+
+
 namespace FHErfurtAppCross
 {
 	public class MenuListView : ListView
