@@ -8,18 +8,22 @@ namespace FHErfurtAppCross
 	{
 		public App ()
 		{
-			// The root page of your application
-			MainPage = new ContentPage {
-				Content = new StackLayout {
-					VerticalOptions = LayoutOptions.Center,
-					Children = {
-						new Label {
-							XAlign = TextAlignment.Center,
-							Text = "Welcome to Xamarin Forms!"
-						}
-					}
-				}
-			};
+			var menuPage = new MenuPage ();
+
+			menuPage.Menu.ItemSelected += (sender, e) => NavigateTo (e.SelectedItem as MenuItem);
+
+			Master = menuPage;
+			Detail = new NavigationPage (new ContractsPage ());
+		}
+
+		void NavigateTo (MenuItem menu)
+		{
+			Page displayPage = (Page)Activator.CreateInstance (menu.TargetType);
+
+			Detail = new NavigationPage (displayPage);
+
+			IsPresented = false;
+		}
 		}
 
 		protected override void OnStart ()
