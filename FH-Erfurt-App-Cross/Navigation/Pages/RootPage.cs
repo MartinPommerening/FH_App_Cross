@@ -8,7 +8,7 @@ namespace FHErfurtAppCross
 	{
 		public RootPage ()
 		{
-			var menuPage = new MenuPage ();
+			MenuPage menuPage = new MenuPage ();
 
 			menuPage.Menu.ItemSelected += (sender, e) => NavigateTo (e.SelectedItem as MenuItem);
 
