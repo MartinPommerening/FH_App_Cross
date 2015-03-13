@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 
 namespace FHErfurtAppCross
 {
@@ -7,6 +8,11 @@ namespace FHErfurtAppCross
 		public Person ()
 		{
 		}
+	}
+
+	public class BlogsViewModel
+	{
+		public ObservableCollection<Person> Persons { get; set; }
 	}
 }
 
